@@ -1,0 +1,42 @@
+.navbar
+{
+    width: 100%;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 8px -1px rgba(0,0,0,0.25);
+}
+
+.navbar-container
+{
+    padding-top: 0rem;
+}
+
+.navbar-toggler
+{
+    background: #fff;
+    padding: 0.2rem;
+}
+
+.nav-link
+{
+    transition: all 0.2s linear;
+    font-weight: 500;
+}
+
+.nav-link:hover
+{
+    color: tomato !important;
+}
+
+.login-bg
+{
+    background: tomato;
+    border-radius: 0.5rem;
+    color: #fff !important;
+}
+
+.login-bg:hover
+{
+    background: #fff;
+    color: tomato;
+    border: 0.5px solid tomato;
+}

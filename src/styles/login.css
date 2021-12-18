@@ -1,0 +1,87 @@
+.login,
+.register
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 3rem;
+}
+
+.login > .wrapper,
+.register > .wrapper
+{
+    width: 80%;
+    height: 515px;
+    position: relative;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 0.825rem;
+    box-shadow: 0 4px 8px -2px rgba(0,0,0,0.25);
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.login > .wrapper > div,
+.register > .wrapper > div
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+}
+
+.login > .wrapper img,
+.register > .wrapper img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(1.5);
+}
+
+.mb-3,
+.mb-2
+{
+    position: relative;
+}
+
+input:focus
+{
+    outline: none;
+    border: none;
+    caret-color: rgb(235, 216, 124);
+}
+
+.bi.bi-eye
+{
+    position: absolute;
+    top: 60%;
+    right: 0%;
+    transform: translate(-50%,-0%);
+    cursor: pointer;
+}
+
+p.register
+{
+    font-size: 0.825rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+p.login
+{
+    font-size: 0.825rem;
+    margin: 0;
+    text-align: center;
+}
+
+p.register > a,
+p.login > a
+{
+    text-decoration: none;
+}

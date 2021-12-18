@@ -1,0 +1,206 @@
+.app {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(235, 216, 124);
+  color: #fff;
+  z-index: 99;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+}
+
+.home-title {
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.mb-2.home-text {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.mb-3.home-text {
+  font-size: 0.825rem;
+}
+
+.container {
+  padding-top: 5rem;
+}
+
+.form-control {
+  width: 350px;
+}
+
+.form-label {
+  font-size: 0.825rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.blog-container {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.blogBox {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.25);
+  border: 1px solid #fff;
+  backdrop-filter: blur(8px);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: #111;
+}
+
+.blogBox:first-child {
+  margin-top: 5rem;
+}
+
+.blog-top {
+  display: flex;
+}
+
+.blog-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.title {
+  color: tomato;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.author {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.body {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.comment-text {
+  border: none;
+  outline: none;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  width: 350px;
+  padding-left: 0.5rem;
+  caret-color: tomato;
+}
+
+.circle {
+  position: fixed;
+  z-index: -1;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+  filter: blur(5px);
+}
+
+@keyframes movement {
+  0% {
+    transform: translate(5px, 2px);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: translate(-5px, -2px);
+  }
+}
+
+.circle.one {
+  top: 10%;
+  left: 10%;
+  width: 100px;
+  height: 100px;
+  background: turquoise;
+  animation: movement 3s infinite alternate;
+}
+
+.circle.two {
+  bottom: 50%;
+  right: 10%;
+  width: 80px;
+  height: 80px;
+  background: yellowgreen;
+  animation: slidein 3s infinite alternate;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(-15px);
+  }
+
+  to {
+    transform: translateY(15px);
+  }
+}
+
+.circle.three {
+  top: 60%;
+  right: 35%;
+  width: 50px;
+  height: 50px;
+  background: cornflowerblue;
+  animation: zoom 5s infinite alternate;
+}
+
+@keyframes zoom
+{
+    from
+    {
+        transform: scale(5px);
+    }
+
+    to
+    {
+        transform: scale(0);
+    }
+}
+
+.circle.four {
+  top: 80%;
+  left: 20%;
+  width: 150px;
+  height: 150px;
+  background: crimson;
+  animation: slideleft 3s alternate infinite;
+}
+
+@keyframes slideleft 
+{
+    from
+    {
+        transform: translateX(-15px);
+    }
+
+    to
+    {
+        transform: translateX(15px);
+    }
+
+}
